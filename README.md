@@ -13,7 +13,6 @@ Let's connect to the MongoDb database "`acmeco`" and fetch some data from the "`
 
 		$data = $DB->collection('products')->get();
 
-#### get()
 
 Let's do the same but apply a projection, sort, and a limit to our results.
 
@@ -22,8 +21,6 @@ Let's do the same but apply a projection, sort, and a limit to our results.
 			->sort('title', 1)
 			->limit(5)
 			->get();	
-
-#### count()
 
 Insert a document into the products collection ...
 
@@ -40,6 +37,10 @@ Insert multiple documents into the products collection ...
 			[
 				'title' => 'Widget 1',
 				'sku'   => 'WIDGET-1'
+				'options' => [
+					'color' => 'red',
+					'size'  => 'small'
+				]
 			],
 			[
 				'title' => 'Widget 2',
