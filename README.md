@@ -7,7 +7,7 @@ mongodb-querybuilder is an abstraction layer for use with the official [MongoDb 
 
 ### Basic Examples
 
-Let's connect to the MongoDb database "`acmeco`" and fetch some data from the "`products`" collection. 
+Let's connect to the MongoDB database "`example`" and fetch some data from the "`products`" collection. 
 
 		$DB = new QueryBuilder('example');
 
